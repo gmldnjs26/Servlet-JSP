@@ -1,0 +1,17 @@
+1.JSP 내장 객체는 JSP 파일에서 자바 소스로 변활될 때 _jspService() 메소드에 자동으로 선언 및 초기화되는 객체들을 의미한다.
+
+2.<% %>, <%= %> 태그에서는 내장 객체를 바로 사용할 수 있다.
+
+3.내장 객체 request의 타입은 HttpServletRequest이며 요청정보를 처리한다.
+
+4.내장 객체 response의 타입은 HttpServletResponse이며 응답정보를 처리한다.
+
+5.내장 객체 session의 타입은 HttpSession이며 클라이언트 단위로 처리되는 객체이다.
+
+6.내장 객체 out의 타입은 JspWriter이며 클라이언트 쪽에 출력 처리 객체이다.
+
+7.내장 객체 application의 타입은 ServletContext이며 웹 애플리케이션 단위로 처리되는 객체이다.
+
+8.내장 객체 pageContext의 타입은 PageContext이며 JSP 페이지마다 하나씩 생성된다.
+
+9.PageContext는 JSP 내장 객체를 반환하는 메소드를 제공한다.
