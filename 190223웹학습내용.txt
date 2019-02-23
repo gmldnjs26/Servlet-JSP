@@ -1,0 +1,23 @@
+1.JDBC 프로그래밍은 DB 서버와 접속하여 SQL 문을 실행하는 프로그램이다.
+
+2.JDBC 프로그래밍 시 기본적으로 java.sql 패키지의 API들을 사용한다.
+
+3.JDBC Driver는 java.sql의 인터페이스들을 구현한 클래스 파일들이다.
+
+4.Class.forName() 메소드는 JDBC Driver 파일을 사용할 수 있도록 준비해준다.
+
+5.DriverManager.getConnection()은 DB 서버와 접속한 후 Connection을 반환한다.
+
+6.Connection의 메소드를 사용하여 Statement와 PreparedStatement를 생성한다.
+
+7.Statement와 PreparedStatement의 executeUpdate(),executeQuery() 메소드를 사용하여 SQL 문을 실행한다.
+
+8.ResultSet은 SELECT문을 실행한 결괏값을 가지는 객체이다.
+
+9.DB 서버와의 작업이 완료된 후에는 모든 자원을 해제한다. 해제 시 close() 메소드를 사용한다.
+
+10.Connection Pool은 여러 개의 Connection을 갖는 서버 자원이다.
+
+11.DataSource는 Connection Pool에 대한 정보를 갖는 객체이며 getConnection() 메소드를 사용하여 Connection을 추출한다.
+
+12.JNDI 서버는 분산환경에서 서버 자원을 접근할 수 있도록 해준다.
