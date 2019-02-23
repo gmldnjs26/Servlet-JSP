@@ -1,0 +1,30 @@
+1.JSP의 XML 기반 태그는 표준 액션 태그와 커스텀 태그가 있다.
+
+2.표준 액션 태그 라이브러리 이름은 jsp이다.
+
+3.forward 표준 액션 태그는 다른 페이지를 현재 페이지에 포함한다.
+
+4.include 표준 액션 태그는 다른 페이지를 현재 페이지에 포함한다.
+
+5.JSP Bean은 JSP 컨테이너에 의해 동작하는 자바 객체이다.
+
+6.JSP Bean은 패키지화해야 한다.(com.edu.beans)
+
+7.JSP Bean 멤버변수의 접근자는 private으로 선언한다.
+
+8.JSP Bean은 기본 생성자를 가져야한다.
+
+9.JSP Bean은 private으로 선언된 멤버변수의 getter,setter 메소드를 선언해야한다.
+
+10.useBean 표준 액션 태그는 JSP Bean 객체를 생성한다.
+
+11.getProperty 표준 액션 태그는 JSP Bean의 getter 메소드를 호출한다.
+
+12.setProperty 표준 액션 태그는 JSP Bean의 setter 메소드를 호출한다.
+
+<jsp:setProperty property="*" name="book" />
+(일반 자바 코드로 작성하면) (Book 클래스의 멤버변수가 no title author publisher 있다고 가정했을때)
+book.setNo(request.getParameter("no"));
+book.setTitle(request.getParameter("title"));
+book.setAuthor(request.getParameter("author"));
+book.setPublisher(request.getParameter("publisher"));
